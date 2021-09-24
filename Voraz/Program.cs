@@ -6,7 +6,6 @@ namespace Voraz
     class Program
     {
         static int[] deno = { 1, 2, 5, 10, 20 };
-
         static int n = deno.Length;
 
         static void Main()
@@ -26,19 +25,18 @@ namespace Voraz
         {
             int n = 36;
             Console.Write("\n ***** ALGORITMO EJEMPLO 1 *****");
-            Console.Write("La menor cantidad de monedas para el valor " + n + " es: ");
-            Console.Write("\n");
+            Console.Write(" -- Las monedas para el valor " + n + " es: ");            
             BuscarCambioMoneda(n);
+            Console.Write("\n");
         }
 
         static void EjecucionAlgoritmo3()
         {
             string texto = "ABAABCB";
             Console.Write("\n ***** ALGORITMO EJEMPLO 3 *****");            
-            Console.Write("El texto lexograficamente mayor para " + texto + " es: ");
-            Console.Write("\n");
-
+            Console.Write(" -- El texto lexograficamente mayor para " + texto + " es: ");            
             BuscarLetras(texto.ToUpper());
+            Console.Write("\n");
         }
 
         public static void BuscarCambioMoneda(int V)
