@@ -11,22 +11,32 @@ namespace Voraz
 
         static void Main()
         {
-            //EjecucionAlgoritmo1();
+            /*
+             * AQUI COMIENZA EL PROGRAMA
+             * Se puede ejecutar el algoritmo 1 o el algoritmo 3 dependiendo cual se descomentaree
+             * 
+             * 
+             */
+
+            EjecucionAlgoritmo1();
             EjecucionAlgoritmo3();
         }
 
         static void EjecucionAlgoritmo1()
         {
             int n = 36;
+            Console.Write("\n ***** ALGORITMO EJEMPLO 1 *****");
             Console.Write("La menor cantidad de monedas para el valor " + n + " es: ");
-
+            Console.Write("\n");
             BuscarCambioMoneda(n);
         }
 
         static void EjecucionAlgoritmo3()
         {
             string texto = "ABAABCB";
+            Console.Write("\n ***** ALGORITMO EJEMPLO 3 *****");            
             Console.Write("El texto lexograficamente mayor para " + texto + " es: ");
+            Console.Write("\n");
 
             BuscarLetras(texto.ToUpper());
         }
